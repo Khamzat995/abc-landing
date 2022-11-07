@@ -1,3 +1,9 @@
+$(window).on("load", function () {
+  $(".loader-inner").fadeOut();
+  $(".loader").delay(1000).fadeOut("slow");
+});
+
+
 let navbar = document.querySelector('.navbar');
 
 document.querySelector('#menu-btn').onclick = () => {
