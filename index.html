@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <!-- "Нет мощи и силы ни у кого, кроме Аллаха". لا حَـوْلَ وَلا قُـوَّةَ إِلاّ بِالله. Ля хауля ва ля куввата илля би-Лляхи!!! -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,21 +19,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
     <!-- "Нет мощи и силы ни у кого, кроме Аллаха". لا حَـوْلَ وَلا قُـوَّةَ إِلاّ بِالله. Ля хауля ва ля куввата илля би-Лляхи!!! -->
+
+    <!-- modal -->
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!--Latest stable release of jQuery Core Library-->
+    <script src="https://code.jquery.com/jquery-1.12.2.min.js"
+        integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
+
+    <!--Bootstrap JS-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+    </script>
+
+
 </head>
 
 <body>
 
-    <div class="loader">
-        <div class="loader-inner"></div>
-    </div>
-    <!--     <div class="main-page-wrapper"> -->
-    <div class="classic-3"></div>
     <!-- header section starts  -->
 
     <header class="header">
-        <a href="#home" class="logo"> <img src="image/logo.webp" alt="Logo"> </a>
+        <a href="#home" class="logo" style="text-decoration: none">
+            <div class="logotip">
+                <h1>Istanbul</h1>
+                <h5>real estate</h5>
+            </div>
+        </a>
         <nav class="navbar">
             <a href="#home">Домой</a>
             <a href="#products">Недвижимость</a>
@@ -41,10 +56,10 @@
             <a href="#contact">Контакты</a>
         </nav>
         <div class="icons">
-            <a href="tel:+905013308850">
+            <a href="tel:+905557773333">
                 <div style="display: flex">
                     <h5 id="blink">☎</h5>
-                    <h5>+90 5013308850</h5>
+                    <h5>+90 5557773333</h5>
                 </div>
             </a>
             <div id="menu-btn" class="fas fa-bars"></div>
@@ -65,7 +80,7 @@
                     <div class="content">
                         <span>Переплата 0%</span>
                         <h3>Квартиры </br> в Стамбуле</h3>
-                        <a href="#products" class="btn">Посмотреть</a>
+                        <a href="#" class="btn">Посмотреть</a>
                     </div>
                 </div>
 
@@ -104,7 +119,7 @@
             <div class="content">
                 <span>Специальное предложение</span>
                 <h3>Скидка 10%</h3>
-                <a href="#products" class="btn">Посмотреть</a>
+                <a href="" class="btn" data-toggle="modal" data-target="#projectK">Посмотреть</a>
             </div>
         </div>
 
@@ -113,7 +128,7 @@
             <div class="content">
                 <span>Специальное предложение</span>
                 <h3>Рассрочка 36 мес.</h3>
-                <a href="#products" class="btn">Посмотреть</a>
+                <a href="" class="btn" data-toggle="modal" data-target="#projectC">Посмотреть</a>
             </div>
         </div>
 
@@ -137,7 +152,7 @@
 
         <div class="box-container">
 
-            <div class="box" data-item="special">
+            <div class="box" data-item="special" data-toggle="modal" data-target="#projectA">
                 <div class="image">
                     <img src="image/project/photos_1.webp" alt="">
                 </div>
@@ -159,7 +174,7 @@
                 </div>
             </div>
 
-            <div class="box" data-item="arrivals">
+            <div class="box" data-item="arrivals" data-toggle="modal" data-target="#projectB">
                 <div class="image">
                     <img src="image/project/photos_4.webp" alt="">
                 </div>
@@ -180,9 +195,9 @@
                 </div>
             </div>
 
-            <div class="box" data-item="seller">
-                <div class="image">
-                    <img src="image/project/photos_13.webp" alt="">
+            <div class="box" data-item="seller" data-toggle="modal" data-target="#projectC">
+                <div class=" image">
+                    <img src="image/project/photos_2.webp" alt="">
                 </div>
                 <div class="content">
                     <h3>Квартира 1+1 сите Кавакли</h3>
@@ -201,9 +216,9 @@
                 </div>
             </div>
 
-            <div class="box" data-item="featured">
+            <div class="box" data-item="featured" data-toggle="modal" data-target="#projectD">
                 <div class="image">
-                    <img src="image/project/photos_2.webp" alt="">
+                    <img src="image/project/photos_13.webp" alt="">
                 </div>
                 <div class="content">
                     <h3>Вилла 4+2</h3>
@@ -222,7 +237,7 @@
                 </div>
             </div>
 
-            <div class="box" data-item="featured">
+            <div class="box" data-item="featured" data-toggle="modal" data-target="#projectE">
                 <div class="image">
                     <img src="image/project/photos_3.webp" alt="">
                 </div>
@@ -243,7 +258,7 @@
                 </div>
             </div>
 
-            <div class="box" data-item="arrivals">
+            <div class="box" data-item="arrivals" data-toggle="modal" data-target="#projectF">
                 <div class="image">
                     <img src="image/project/photos_6.webp" alt="">
                 </div>
@@ -264,7 +279,7 @@
                 </div>
             </div>
 
-            <div class="box" data-item="special">
+            <div class="box" data-item="special" data-toggle="modal" data-target="#projectG">
                 <div class="image">
                     <img src="image/project/photos_7.webp" alt="">
                 </div>
@@ -286,7 +301,7 @@
                 </div>
             </div>
 
-            <div class="box" data-item="seller">
+            <div class="box" data-item="seller" data-toggle="modal" data-target="#projectH">
                 <div class="image">
                     <img src="image/project/photos_8.webp" alt="">
                 </div>
@@ -307,7 +322,7 @@
                 </div>
             </div>
 
-            <div class="box" data-item="arrivals">
+            <div class="box" data-item="arrivals" data-toggle="modal" data-target="#projectI">
                 <div class="image">
                     <img src="image/project/photos_9.webp" alt="">
                 </div>
@@ -329,7 +344,7 @@
                 </div>
             </div>
 
-            <div class="box" data-item="featured">
+            <div class="box" data-item="featured" data-toggle="modal" data-target="#projectJ">
                 <div class="image">
                     <img src="image/project/photos_10.webp" alt="">
                 </div>
@@ -351,7 +366,7 @@
                 </div>
             </div>
 
-            <div class="box" data-item="special">
+            <div class="box" data-item="special" data-toggle="modal" data-target="#projectK">
                 <div class="image">
                     <img src="image/project/photos_11.webp" alt="">
                 </div>
@@ -373,7 +388,7 @@
                 </div>
             </div>
 
-            <div class="box" data-item="seller">
+            <div class="box" data-item="seller" data-toggle="modal" data-target="#projectL">
                 <div class="image">
                     <img src="image/project/photos_12.webp" alt="">
                 </div>
@@ -399,6 +414,917 @@
     </section>
 
     <!-- products section ends -->
+
+
+    <!-- modal experiment-->
+
+    <div id="projects" class="container-fluid" visibility="hidden">
+        <!-- первый ряд -->
+        <!-- Project A  -->
+        <div class="modal fade" id="projectA">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header"> <span class="wave-1">☎ </span><b> +90 5551234567 <span> +90
+                                5551234890</span></b>
+                        <button type="button" class="close" data-dismiss="modal" title="Close"> <span
+                                class="glyphicon glyphicon-remove"></span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="projectAsel" class="carousel slide project-slide" data-interval="false">
+                            <div class="carousel-inner">
+                                <div class="item active"> <img src="image/project/photos_1.webp" alt="item1">
+                                </div>
+                                <div class="item"><img src="image/home/home_3.webp" alt="item2">
+                                </div>
+                                <div class="item"> <img src="image/home/home_1.webp" alt="item3">
+                                </div>
+                                <div class="item"> <img src="image/home/home_5.webp" alt="item4">
+                                </div>
+                                <div class="item"> <img src="image/home/home_10.webp" alt="item5">
+                                </div>
+                                <div class="item"> <img src="image/home/home_11.webp" alt="item6">
+                                </div>
+                                <div class="item"> <video src="video/present_3.mp4" alt="item7" autoplay loop muted
+                                        playsinline></video>
+                                </div>
+                                <ol class="carousel-indicators">
+                                    <li class="active" data-slide-to="0" data-target="#projectAsel">
+                                        <img alt="" src="image/home/home_3.webp">
+                                    </li>
+                                    <li class="" data-slide-to="1" data-target="#projectAsel">
+                                        <img alt="" src="image/home/home_1.webp">
+                                    </li>
+                                    <li class="" data-slide-to="2" data-target="#projectAsel">
+                                        <img alt="" src="image/home/home_5.webp">
+                                    </li>
+                                    <li class="" data-slide-to="3" data-target="#projectAsel">
+                                        <img alt="" src="image/home/home_10.webp">
+                                    </li>
+                                    <li class="" data-slide-to="4" data-target="#projectAsel">
+                                        <img alt="" src="image/home/home_11.webp">
+                                    </li>
+                                    <li class="" data-slide-to="5" data-target="#projectAsel">
+                                        <video src="video/present_3.mp4" autoplay loop muted playsinline></video>
+                                    </li>
+                                </ol>
+                            </div>
+                            <a class="left carousel-control" href="#projectAsel" role="button" data-slide="prev"> <span
+                                    class="glyphicon glyphicon-chevron-left"></span></a>
+                            <a class="right carousel-control" href="#projectAsel" role="button" data-slide="next"> <span
+                                    class="glyphicon glyphicon-chevron-right"></span></a>
+                        </div>
+                        <div id="carouselHeader">
+                            <h4>Квартира-дуплекс 3+2 160m2</h4>
+                        </div>
+                        <div id="info">
+                            <p> Новостройка люкс класса Стамбул Бейликдюзю, состоит из 8 башен, в
+                                каждой 41 этаж. На площади 40 тыс.м2, 50% территории озеленение. Имеется
+                                торговый центр на 102 павильона, детский парк, баскетбольная площадка, зона
+                                барбекю, 2 бессейна, 2 спортзала, 2 сауны, 2 турецкие бани, 2 массажных
+                                центра, подземная и открытая парковки. Рядом вся необходимая социальная
+                                инфраструктура. Получение ВНЖ и
+                                гражданства Турции без проблем.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn-sm close" type="button" data-dismiss="modal">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project B  -->
+        <div class="modal fade" id="projectB">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header"> <span class="wave-1">☎ </span><b> +90 5551234567 <span> +90
+                                5551234890</span></b>
+                        <button type="button" class="close" data-dismiss="modal" title="Close"> <span
+                                class="glyphicon glyphicon-remove"></span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="projectBsel" class="carousel slide project-slide" data-interval="false">
+                            <div class="carousel-inner">
+                                <div class="item active"> <img src="image/project/photos_4.webp" alt="item1">
+                                </div>
+                                <div class="item"><img src="image/home/home_2.webp" alt="item2">
+                                </div>
+                                <div class="item"> <img src="image/home/home_4.webp" alt="item3">
+                                </div>
+                                <div class="item"> <img src="image/home/home_6.webp" alt="item4">
+                                </div>
+                                <div class="item"> <img src="image/home/home_8.webp" alt="item5">
+                                </div>
+                                <div class="item"> <img src="image/home/home_11.webp" alt="item6">
+                                </div>
+                                <div class="item"> <video src="video/present_1.mp4" alt="item7" autoplay loop muted
+                                        playsinline></video>
+                                </div>
+                                <ol class="carousel-indicators">
+                                    <li class="active" data-slide-to="0" data-target="#projectBsel">
+                                        <img alt="" src="image/home/home_2.webp">
+                                    </li>
+                                    <li class="" data-slide-to="1" data-target="#projectBsel">
+                                        <img alt="" src="image/home/home_4.webp">
+                                    </li>
+                                    <li class="" data-slide-to="2" data-target="#projectBsel">
+                                        <img alt="" src="image/home/home_6.webp">
+                                    </li>
+                                    <li class="" data-slide-to="3" data-target="#projectBsel">
+                                        <img alt="" src="image/home/home_8.webp">
+                                    </li>
+                                    <li class="" data-slide-to="4" data-target="#projectBsel">
+                                        <img alt="" src="image/home/home_11.webp">
+                                    </li>
+                                    <li class="" data-slide-to="5" data-target="#projectBsel">
+                                        <video src="video/present_1.mp4" autoplay loop muted playsinline></video>
+                                    </li>
+                                </ol>
+                            </div>
+                            <a class="left carousel-control" href="#projectBsel" role="button" data-slide="prev"> <span
+                                    class="glyphicon glyphicon-chevron-left"></span></a>
+                            <a class="right carousel-control" href="#projectBsel" role="button" data-slide="next"> <span
+                                    class="glyphicon glyphicon-chevron-right"></span></a>
+                        </div>
+                        <div id="carouselHeader">
+                            <h4>Квартира 1+1 60m2</h4>
+                        </div>
+                        <div id="info">
+                            <p> Новостройка люкс класса Стамбул Бейликдюзю, состоит из 8 башен, в
+                                каждой 41 этаж. На площади 40 тыс.м2, 50% территории озеленение. Имеется
+                                торговый центр на 102 павильона, детский парк, баскетбольная площадка, зона
+                                барбекю, 2 бессейна, 2 спортзала, 2 сауны, 2 турецкие бани, 2 массажных
+                                центра, подземная и открытая парковки. Рядом вся необходимая социальная
+                                инфраструктура. Получение ВНЖ и
+                                гражданства Турции без проблем.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn-sm close" type="button" data-dismiss="modal">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project C  -->
+        <div class="modal fade" id="projectC">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header"> <span class="wave-1">☎ </span><b> +90 5551234567 <span> +90
+                                5551234890</span></b>
+                        <button type="button" class="close" data-dismiss="modal" title="Close"> <span
+                                class="glyphicon glyphicon-remove"></span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="projectCsel" class="carousel slide project-slide" data-interval="false">
+                            <div class="carousel-inner">
+                                <div class="item active"> <img src="image/project/photos_2.webp" alt="item1">
+                                </div>
+                                <div class="item"><img src="image/home/home_3.webp" alt="item2">
+                                </div>
+                                <div class="item"> <img src="image/home/home_1.webp" alt="item3">
+                                </div>
+                                <div class="item"> <img src="image/home/home_5.webp" alt="item4">
+                                </div>
+                                <div class="item"> <img src="image/home/home_10.webp" alt="item5">
+                                </div>
+                                <div class="item"> <img src="image/home/home_11.webp" alt="item6">
+                                </div>
+                                <div class="item"> <video src="video/present_2.mp4" alt="item7" autoplay loop muted
+                                        playsinline></video>
+                                </div>
+                                <ol class="carousel-indicators">
+                                    <li class="active" data-slide-to="0" data-target="#projectCsel">
+                                        <img alt="" src="image/home/home_3.webp">
+                                    </li>
+                                    <li class="" data-slide-to="1" data-target="#projectCsel">
+                                        <img alt="" src="image/home/home_1.webp">
+                                    </li>
+                                    <li class="" data-slide-to="2" data-target="#projectCsel">
+                                        <img alt="" src="image/home/home_5.webp">
+                                    </li>
+                                    <li class="" data-slide-to="3" data-target="#projectCsel">
+                                        <img alt="" src="image/home/home_10.webp">
+                                    </li>
+                                    <li class="" data-slide-to="4" data-target="#projectCsel">
+                                        <img alt="" src="image/home/home_11.webp">
+                                    </li>
+                                    <li class="" data-slide-to="5" data-target="#projectCsel">
+                                        <video src="video/present_2.mp4" autoplay loop muted playsinline></video>
+                                    </li>
+                                </ol>
+                            </div>
+                            <a class="left carousel-control" href="#projectCsel" role="button" data-slide="prev"> <span
+                                    class="glyphicon glyphicon-chevron-left"></span></a>
+                            <a class="right carousel-control" href="#projectCsel" role="button" data-slide="next"> <span
+                                    class="glyphicon glyphicon-chevron-right"></span></a>
+                        </div>
+                        <div id="carouselHeader">
+                            <h4>Квартира 1+1 70m2 рассрочка 36 мес.</h4>
+                        </div>
+                        <div id="info">
+                            <p> Новостройка люкс класса Стамбул Бейликдюзю, состоит из 8 башен, в
+                                каждой 41 этаж. На площади 40 тыс.м2, 50% территории озеленение. Имеется
+                                торговый центр на 102 павильона, детский парк, баскетбольная площадка, зона
+                                барбекю, 2 бессейна, 2 спортзала, 2 сауны, 2 турецкие бани, 2 массажных
+                                центра, подземная и открытая парковки. Рядом вся необходимая социальная
+                                инфраструктура. Получение ВНЖ и
+                                гражданства Турции без проблем.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn-sm close" type="button" data-dismiss="modal">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project D  -->
+        <div class="modal fade" id="projectD">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header"> <span class="wave-1">☎ </span><b> +90 5551234567 <span> +90
+                                5551234890</span></b>
+                        <button type="button" class="close" data-dismiss="modal" title="Close"> <span
+                                class="glyphicon glyphicon-remove"></span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="projectDsel" class="carousel slide project-slide" data-interval="false">
+                            <div class="carousel-inner">
+                                <div class="item active"> <img src="image/project/photos_13.webp" alt="item1">
+                                </div>
+                                <div class="item"><img src="image/home/home_2.webp" alt="item2">
+                                </div>
+                                <div class="item"> <img src="image/home/home_4.webp" alt="item3">
+                                </div>
+                                <div class="item"> <img src="image/home/home_6.webp" alt="item4">
+                                </div>
+                                <div class="item"> <img src="image/home/home_8.webp" alt="item5">
+                                </div>
+                                <div class="item"> <img src="image/home/home_11.webp" alt="item6">
+                                </div>
+                                <div class="item"> <video src="video/present_4.mp4" alt="item7" autoplay loop muted
+                                        playsinline></video>
+                                </div>
+                                <ol class="carousel-indicators">
+                                    <li class="active" data-slide-to="0" data-target="#projectDsel">
+                                        <img alt="" src="image/home/home_2.webp">
+                                    </li>
+                                    <li class="" data-slide-to="1" data-target="#projectDsel">
+                                        <img alt="" src="image/home/home_4.webp">
+                                    </li>
+                                    <li class="" data-slide-to="2" data-target="#projectDsel">
+                                        <img alt="" src="image/home/home_6.webp">
+                                    </li>
+                                    <li class="" data-slide-to="3" data-target="#projectDsel">
+                                        <img alt="" src="image/home/home_8.webp">
+                                    </li>
+                                    <li class="" data-slide-to="4" data-target="#projectDsel">
+                                        <img alt="" src="image/home/home_11.webp">
+                                    </li>
+                                    <li class="" data-slide-to="5" data-target="#projectDsel">
+                                        <video src="video/present_4.mp4" autoplay loop muted playsinline></video>
+                                    </li>
+                                </ol>
+                            </div>
+                            <a class="left carousel-control" href="#projectDsel" role="button" data-slide="prev"> <span
+                                    class="glyphicon glyphicon-chevron-left"></span></a>
+                            <a class="right carousel-control" href="#projectDsel" role="button" data-slide="next"> <span
+                                    class="glyphicon glyphicon-chevron-right"></span></a>
+                        </div>
+                        <div id="carouselHeader">
+                            <h4>Вилла 4+2 150m2</h4>
+                        </div>
+                        <div id="info">
+                            <p> Новостройка люкс класса Стамбул Бейликдюзю, состоит из 8 башен, в
+                                каждой 41 этаж. На площади 40 тыс.м2, 50% территории озеленение. Имеется
+                                торговый центр на 102 павильона, детский парк, баскетбольная площадка, зона
+                                барбекю, 2 бессейна, 2 спортзала, 2 сауны, 2 турецкие бани, 2 массажных
+                                центра, подземная и открытая парковки. Рядом вся необходимая социальная
+                                инфраструктура. Получение ВНЖ и
+                                гражданства Турции без проблем.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn-sm close" type="button" data-dismiss="modal">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- второй ряд -->
+        <!-- Project E  -->
+        <div class="modal fade" id="projectE">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header"> <span class="wave-1">☎ </span><b> +90 5551234567 <span> +90
+                                5551234890</span></b>
+                        <button type="button" class="close" data-dismiss="modal" title="Close"> <span
+                                class="glyphicon glyphicon-remove"></span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="projectEsel" class="carousel slide project-slide" data-interval="false">
+                            <div class="carousel-inner">
+                                <div class="item active"> <img src="image/project/photos_3.webp" alt="item1">
+                                </div>
+                                <div class="item"><img src="image/home/home_3.webp" alt="item2">
+                                </div>
+                                <div class="item"> <img src="image/home/home_1.webp" alt="item3">
+                                </div>
+                                <div class="item"> <img src="image/home/home_5.webp" alt="item4">
+                                </div>
+                                <div class="item"> <img src="image/home/home_10.webp" alt="item5">
+                                </div>
+                                <div class="item"> <img src="image/home/home_11.webp" alt="item6">
+                                </div>
+                                <div class="item"> <video src="video/present_3.mp4" alt="item7" autoplay loop muted
+                                        playsinline></video>
+                                </div>
+                                <ol class="carousel-indicators">
+                                    <li class="active" data-slide-to="0" data-target="#projectEsel">
+                                        <img alt="" src="image/home/home_3.webp">
+                                    </li>
+                                    <li class="" data-slide-to="1" data-target="#projectEsel">
+                                        <img alt="" src="image/home/home_1.webp">
+                                    </li>
+                                    <li class="" data-slide-to="2" data-target="#projectEsel">
+                                        <img alt="" src="image/home/home_5.webp">
+                                    </li>
+                                    <li class="" data-slide-to="3" data-target="#projectEsel">
+                                        <img alt="" src="image/home/home_10.webp">
+                                    </li>
+                                    <li class="" data-slide-to="4" data-target="#projectEsel">
+                                        <img alt="" src="image/home/home_11.webp">
+                                    </li>
+                                    <li class="" data-slide-to="5" data-target="#projectEsel">
+                                        <video src="video/present_3.mp4" autoplay loop muted playsinline></video>
+                                    </li>
+                                </ol>
+                            </div>
+                            <a class="left carousel-control" href="#projectEsel" role="button" data-slide="prev"> <span
+                                    class="glyphicon glyphicon-chevron-left"></span></a>
+                            <a class="right carousel-control" href="#projectEsel" role="button" data-slide="next"> <span
+                                    class="glyphicon glyphicon-chevron-right"></span></a>
+                        </div>
+                        <div id="carouselHeader">
+                            <h4>Вилла 3+2 120m2</h4>
+                        </div>
+                        <div id="info">
+                            <p> Новостройка люкс класса Стамбул Бейликдюзю, состоит из 8 башен, в
+                                каждой 41 этаж. На площади 40 тыс.м2, 50% территории озеленение. Имеется
+                                торговый центр на 102 павильона, детский парк, баскетбольная площадка, зона
+                                барбекю, 2 бессейна, 2 спортзала, 2 сауны, 2 турецкие бани, 2 массажных
+                                центра, подземная и открытая парковки. Рядом вся необходимая социальная
+                                инфраструктура. Получение ВНЖ и
+                                гражданства Турции без проблем.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn-sm close" type="button" data-dismiss="modal">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project F  -->
+        <div class="modal fade" id="projectF">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header"> <span class="wave-1">☎ </span><b> +90 5551234567 <span> +90
+                                5551234890</span></b>
+                        <button type="button" class="close" data-dismiss="modal" title="Close"> <span
+                                class="glyphicon glyphicon-remove"></span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="projectFsel" class="carousel slide project-slide" data-interval="false">
+                            <div class="carousel-inner">
+                                <div class="item active"> <img src="image/project/photos_6.webp" alt="item1">
+                                </div>
+                                <div class="item"><img src="image/home/home_2.webp" alt="item2">
+                                </div>
+                                <div class="item"> <img src="image/home/home_4.webp" alt="item3">
+                                </div>
+                                <div class="item"> <img src="image/home/home_6.webp" alt="item4">
+                                </div>
+                                <div class="item"> <img src="image/home/home_8.webp" alt="item5">
+                                </div>
+                                <div class="item"> <img src="image/home/home_11.webp" alt="item6">
+                                </div>
+                                <div class="item"> <video src="video/present_1.mp4" alt="item7" autoplay loop muted
+                                        playsinline></video>
+                                </div>
+                                <ol class="carousel-indicators">
+                                    <li class="active" data-slide-to="0" data-target="#projectFsel">
+                                        <img alt="" src="image/home/home_2.webp">
+                                    </li>
+                                    <li class="" data-slide-to="1" data-target="#projectFsel">
+                                        <img alt="" src="image/home/home_4.webp">
+                                    </li>
+                                    <li class="" data-slide-to="2" data-target="#projectFsel">
+                                        <img alt="" src="image/home/home_6.webp">
+                                    </li>
+                                    <li class="" data-slide-to="3" data-target="#projectFsel">
+                                        <img alt="" src="image/home/home_8.webp">
+                                    </li>
+                                    <li class="" data-slide-to="4" data-target="#projectFsel">
+                                        <img alt="" src="image/home/home_11.webp">
+                                    </li>
+                                    <li class="" data-slide-to="5" data-target="#projectFsel">
+                                        <video src="video/present_1.mp4" autoplay loop muted playsinline></video>
+                                    </li>
+                                </ol>
+                            </div>
+                            <a class="left carousel-control" href="#projectFsel" role="button" data-slide="prev"> <span
+                                    class="glyphicon glyphicon-chevron-left"></span></a>
+                            <a class="right carousel-control" href="#projectFsel" role="button" data-slide="next"> <span
+                                    class="glyphicon glyphicon-chevron-right"></span></a>
+                        </div>
+                        <div id="carouselHeader">
+                            <h4>Квартира 2+1 100m2</h4>
+                        </div>
+                        <div id="info">
+                            <p> Новостройка люкс класса Стамбул Бейликдюзю, состоит из 8 башен, в
+                                каждой 41 этаж. На площади 40 тыс.м2, 50% территории озеленение. Имеется
+                                торговый центр на 102 павильона, детский парк, баскетбольная площадка, зона
+                                барбекю, 2 бессейна, 2 спортзала, 2 сауны, 2 турецкие бани, 2 массажных
+                                центра, подземная и открытая парковки. Рядом вся необходимая социальная
+                                инфраструктура. Получение ВНЖ и
+                                гражданства Турции без проблем.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn-sm close" type="button" data-dismiss="modal">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project G  -->
+        <div class="modal fade" id="projectG">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header"> <span class="wave-1">☎ </span><b> +90 5551234567 <span> +90
+                                5551234890</span></b>
+                        <button type="button" class="close" data-dismiss="modal" title="Close"> <span
+                                class="glyphicon glyphicon-remove"></span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="projectGsel" class="carousel slide project-slide" data-interval="false">
+                            <div class="carousel-inner">
+                                <div class="item active"> <img src="image/project/photos_7.webp" alt="item1">
+                                </div>
+                                <div class="item"><img src="image/home/home_3.webp" alt="item2">
+                                </div>
+                                <div class="item"> <img src="image/home/home_1.webp" alt="item3">
+                                </div>
+                                <div class="item"> <img src="image/home/home_5.webp" alt="item4">
+                                </div>
+                                <div class="item"> <img src="image/home/home_10.webp" alt="item5">
+                                </div>
+                                <div class="item"> <img src="image/home/home_11.webp" alt="item6">
+                                </div>
+                                <div class="item"> <video src="video/present_2.mp4" alt="item7" autoplay loop muted
+                                        playsinline></video>
+                                </div>
+                                <ol class="carousel-indicators">
+                                    <li class="active" data-slide-to="0" data-target="#projectGsel">
+                                        <img alt="" src="image/home/home_3.webp">
+                                    </li>
+                                    <li class="" data-slide-to="1" data-target="#projectGsel">
+                                        <img alt="" src="image/home/home_1.webp">
+                                    </li>
+                                    <li class="" data-slide-to="2" data-target="#projectGsel">
+                                        <img alt="" src="image/home/home_5.webp">
+                                    </li>
+                                    <li class="" data-slide-to="3" data-target="#projectGsel">
+                                        <img alt="" src="image/home/home_10.webp">
+                                    </li>
+                                    <li class="" data-slide-to="4" data-target="#projectGsel">
+                                        <img alt="" src="image/home/home_11.webp">
+                                    </li>
+                                    <li class="" data-slide-to="5" data-target="#projectGsel">
+                                        <video src="video/present_2.mp4" autoplay loop muted playsinline></video>
+                                    </li>
+                                </ol>
+                            </div>
+                            <a class="left carousel-control" href="#projectGsel" role="button" data-slide="prev"> <span
+                                    class="glyphicon glyphicon-chevron-left"></span></a>
+                            <a class="right carousel-control" href="#projectGsel" role="button" data-slide="next"> <span
+                                    class="glyphicon glyphicon-chevron-right"></span></a>
+                        </div>
+                        <div id="carouselHeader">
+                            <h4>Квартира 2+1 90m2</h4>
+                        </div>
+                        <div id="info">
+                            <p> Новостройка люкс класса Стамбул Бейликдюзю, состоит из 8 башен, в
+                                каждой 41 этаж. На площади 40 тыс.м2, 50% территории озеленение. Имеется
+                                торговый центр на 102 павильона, детский парк, баскетбольная площадка, зона
+                                барбекю, 2 бессейна, 2 спортзала, 2 сауны, 2 турецкие бани, 2 массажных
+                                центра, подземная и открытая парковки. Рядом вся необходимая социальная
+                                инфраструктура. Получение ВНЖ и
+                                гражданства Турции без проблем.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn-sm close" type="button" data-dismiss="modal">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project H  -->
+        <div class="modal fade" id="projectH">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header"> <span class="wave-1">☎ </span><b> +90 5551234567 <span> +90
+                                5551234890</span></b>
+                        <button type="button" class="close" data-dismiss="modal" title="Close"> <span
+                                class="glyphicon glyphicon-remove"></span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="projectHsel" class="carousel slide project-slide" data-interval="false">
+                            <div class="carousel-inner">
+                                <div class="item active"> <img src="image/project/photos_8.webp" alt="item1">
+                                </div>
+                                <div class="item"><img src="image/home/home_2.webp" alt="item2">
+                                </div>
+                                <div class="item"> <img src="image/home/home_4.webp" alt="item3">
+                                </div>
+                                <div class="item"> <img src="image/home/home_6.webp" alt="item4">
+                                </div>
+                                <div class="item"> <img src="image/home/home_8.webp" alt="item5">
+                                </div>
+                                <div class="item"> <img src="image/home/home_11.webp" alt="item6">
+                                </div>
+                                <div class="item"> <video src="video/present_4.mp4" alt="item7" autoplay loop muted
+                                        playsinline></video>
+                                </div>
+                                <ol class="carousel-indicators">
+                                    <li class="active" data-slide-to="0" data-target="#projectHsel">
+                                        <img alt="" src="image/home/home_2.webp">
+                                    </li>
+                                    <li class="" data-slide-to="1" data-target="#projectHsel">
+                                        <img alt="" src="image/home/home_4.webp">
+                                    </li>
+                                    <li class="" data-slide-to="2" data-target="#projectHsel">
+                                        <img alt="" src="image/home/home_6.webp">
+                                    </li>
+                                    <li class="" data-slide-to="3" data-target="#projectHsel">
+                                        <img alt="" src="image/home/home_8.webp">
+                                    </li>
+                                    <li class="" data-slide-to="4" data-target="#projectHsel">
+                                        <img alt="" src="image/home/home_11.webp">
+                                    </li>
+                                    <li class="" data-slide-to="5" data-target="#projectHsel">
+                                        <video src="video/present_4.mp4" autoplay loop muted playsinline></video>
+                                    </li>
+                                </ol>
+                            </div>
+                            <a class="left carousel-control" href="#projectHsel" role="button" data-slide="prev"> <span
+                                    class="glyphicon glyphicon-chevron-left"></span></a>
+                            <a class="right carousel-control" href="#projectHsel" role="button" data-slide="next"> <span
+                                    class="glyphicon glyphicon-chevron-right"></span></a>
+                        </div>
+                        <div id="carouselHeader">
+                            <h4>Квартира-дуплекс 3+2 сите 140m2</h4>
+                        </div>
+                        <div id="info">
+                            <p> Новостройка люкс класса Стамбул Бейликдюзю, состоит из 8 башен, в
+                                каждой 41 этаж. На площади 40 тыс.м2, 50% территории озеленение. Имеется
+                                торговый центр на 102 павильона, детский парк, баскетбольная площадка, зона
+                                барбекю, 2 бессейна, 2 спортзала, 2 сауны, 2 турецкие бани, 2 массажных
+                                центра, подземная и открытая парковки. Рядом вся необходимая социальная
+                                инфраструктура. Получение ВНЖ и
+                                гражданства Турции без проблем.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn-sm close" type="button" data-dismiss="modal">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- третий ряд -->
+        <!-- Project I  -->
+        <div class="modal fade" id="projectI">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header"> <span class="wave-1">☎ </span><b> +90 5551234567 <span> +90
+                                5551234890</span></b>
+                        <button type="button" class="close" data-dismiss="modal" title="Close"> <span
+                                class="glyphicon glyphicon-remove"></span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="projectIsel" class="carousel slide project-slide" data-interval="false">
+                            <div class="carousel-inner">
+                                <div class="item active"> <img src="image/project/photos_9.webp" alt="item1">
+                                </div>
+                                <div class="item"><img src="image/home/home_3.webp" alt="item2">
+                                </div>
+                                <div class="item"> <img src="image/home/home_1.webp" alt="item3">
+                                </div>
+                                <div class="item"> <img src="image/home/home_5.webp" alt="item4">
+                                </div>
+                                <div class="item"> <img src="image/home/home_10.webp" alt="item5">
+                                </div>
+                                <div class="item"> <img src="image/home/home_11.webp" alt="item6">
+                                </div>
+                                <div class="item"> <video src="video/present_3.mp4" alt="item7" autoplay loop muted
+                                        playsinline></video>
+                                </div>
+                                <ol class="carousel-indicators">
+                                    <li class="active" data-slide-to="0" data-target="#projectIsel">
+                                        <img alt="" src="image/home/home_3.webp">
+                                    </li>
+                                    <li class="" data-slide-to="1" data-target="#projectIsel">
+                                        <img alt="" src="image/home/home_1.webp">
+                                    </li>
+                                    <li class="" data-slide-to="2" data-target="#projectIsel">
+                                        <img alt="" src="image/home/home_5.webp">
+                                    </li>
+                                    <li class="" data-slide-to="3" data-target="#projectIsel">
+                                        <img alt="" src="image/home/home_10.webp">
+                                    </li>
+                                    <li class="" data-slide-to="4" data-target="#projectIsel">
+                                        <img alt="" src="image/home/home_11.webp">
+                                    </li>
+                                    <li class="" data-slide-to="5" data-target="#projectIsel">
+                                        <video src="video/present_3.mp4" autoplay loop muted playsinline></video>
+                                    </li>
+                                </ol>
+                            </div>
+                            <a class="left carousel-control" href="#projectIsel" role="button" data-slide="prev"> <span
+                                    class="glyphicon glyphicon-chevron-left"></span></a>
+                            <a class="right carousel-control" href="#projectIsel" role="button" data-slide="next"> <span
+                                    class="glyphicon glyphicon-chevron-right"></span></a>
+                        </div>
+                        <div id="carouselHeader">
+                            <h4>Квартира 3+2 дуплекс 160m2</h4>
+                        </div>
+                        <div id="info">
+                            <p> Новостройка люкс класса Стамбул Бейликдюзю, состоит из 8 башен, в
+                                каждой 41 этаж. На площади 40 тыс.м2, 50% территории озеленение. Имеется
+                                торговый центр на 102 павильона, детский парк, баскетбольная площадка, зона
+                                барбекю, 2 бессейна, 2 спортзала, 2 сауны, 2 турецкие бани, 2 массажных
+                                центра, подземная и открытая парковки. Рядом вся необходимая социальная
+                                инфраструктура. Получение ВНЖ и
+                                гражданства Турции без проблем.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn-sm close" type="button" data-dismiss="modal">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project J  -->
+        <div class="modal fade" id="projectJ">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header"> <span class="wave-1">☎ </span><b> +90 5551234567 <span> +90
+                                5551234890</span></b>
+                        <button type="button" class="close" data-dismiss="modal" title="Close"> <span
+                                class="glyphicon glyphicon-remove"></span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="projectJsel" class="carousel slide project-slide" data-interval="false">
+                            <div class="carousel-inner">
+                                <div class="item active"> <img src="image/project/photos_10.webp" alt="item1">
+                                </div>
+                                <div class="item"><img src="image/home/home_2.webp" alt="item2">
+                                </div>
+                                <div class="item"> <img src="image/home/home_4.webp" alt="item3">
+                                </div>
+                                <div class="item"> <img src="image/home/home_6.webp" alt="item4">
+                                </div>
+                                <div class="item"> <img src="image/home/home_8.webp" alt="item5">
+                                </div>
+                                <div class="item"> <img src="image/home/home_11.webp" alt="item6">
+                                </div>
+                                <div class="item"> <video src="video/present_1.mp4" alt="item7" autoplay loop muted
+                                        playsinline></video>
+                                </div>
+                                <ol class="carousel-indicators">
+                                    <li class="active" data-slide-to="0" data-target="#projectJsel">
+                                        <img alt="" src="image/home/home_2.webp">
+                                    </li>
+                                    <li class="" data-slide-to="1" data-target="#projectJsel">
+                                        <img alt="" src="image/home/home_4.webp">
+                                    </li>
+                                    <li class="" data-slide-to="2" data-target="#projectJsel">
+                                        <img alt="" src="image/home/home_6.webp">
+                                    </li>
+                                    <li class="" data-slide-to="3" data-target="#projectJsel">
+                                        <img alt="" src="image/home/home_8.webp">
+                                    </li>
+                                    <li class="" data-slide-to="4" data-target="#projectJsel">
+                                        <img alt="" src="image/home/home_11.webp">
+                                    </li>
+                                    <li class="" data-slide-to="5" data-target="#projectJsel">
+                                        <video src="video/present_1.mp4" autoplay loop muted playsinline></video>
+                                    </li>
+                                </ol>
+                            </div>
+                            <a class="left carousel-control" href="#projectJsel" role="button" data-slide="prev"> <span
+                                    class="glyphicon glyphicon-chevron-left"></span></a>
+                            <a class="right carousel-control" href="#projectJsel" role="button" data-slide="next"> <span
+                                    class="glyphicon glyphicon-chevron-right"></span></a>
+                        </div>
+                        <div id="carouselHeader">
+                            <h4>Вилла 5+1 160m2</h4>
+                        </div>
+                        <div id="info">
+                            <p> Новостройка люкс класса Стамбул Бейликдюзю, состоит из 8 башен, в
+                                каждой 41 этаж. На площади 40 тыс.м2, 50% территории озеленение. Имеется
+                                торговый центр на 102 павильона, детский парк, баскетбольная площадка, зона
+                                барбекю, 2 бессейна, 2 спортзала, 2 сауны, 2 турецкие бани, 2 массажных
+                                центра, подземная и открытая парковки. Рядом вся необходимая социальная
+                                инфраструктура. Получение ВНЖ и
+                                гражданства Турции без проблем.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn-sm close" type="button" data-dismiss="modal">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project K  -->
+        <div class="modal fade" id="projectK">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header"> <span class="wave-1">☎ </span><b> +90 5551234567 <span> +90
+                                5551234890</span></b>
+                        <button type="button" class="close" data-dismiss="modal" title="Close"> <span
+                                class="glyphicon glyphicon-remove"></span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="projectKsel" class="carousel slide project-slide" data-interval="false">
+                            <div class="carousel-inner">
+                                <div class="item active"> <img src="image/project/photos_11.webp" alt="item1">
+                                </div>
+                                <div class="item"><img src="image/home/home_3.webp" alt="item2">
+                                </div>
+                                <div class="item"> <img src="image/home/home_1.webp" alt="item3">
+                                </div>
+                                <div class="item"> <img src="image/home/home_5.webp" alt="item4">
+                                </div>
+                                <div class="item"> <img src="image/home/home_10.webp" alt="item5">
+                                </div>
+                                <div class="item"> <img src="image/home/home_11.webp" alt="item6">
+                                </div>
+                                <div class="item"> <video src="video/present_2.mp4" alt="item7" autoplay loop muted
+                                        playsinline></video>
+                                </div>
+                                <ol class="carousel-indicators">
+                                    <li class="active" data-slide-to="0" data-target="#projectKsel">
+                                        <img alt="" src="image/home/home_3.webp">
+                                    </li>
+                                    <li class="" data-slide-to="1" data-target="#projectKsel">
+                                        <img alt="" src="image/home/home_1.webp">
+                                    </li>
+                                    <li class="" data-slide-to="2" data-target="#projectKsel">
+                                        <img alt="" src="image/home/home_5.webp">
+                                    </li>
+                                    <li class="" data-slide-to="3" data-target="#projectKsel">
+                                        <img alt="" src="image/home/home_10.webp">
+                                    </li>
+                                    <li class="" data-slide-to="4" data-target="#projectKsel">
+                                        <img alt="" src="image/home/home_11.webp">
+                                    </li>
+                                    <li class="" data-slide-to="5" data-target="#projectKsel">
+                                        <video src="video/present_2.mp4" autoplay loop muted playsinline></video>
+                                    </li>
+                                </ol>
+                            </div>
+                            <a class="left carousel-control" href="#projectKsel" role="button" data-slide="prev"> <span
+                                    class="glyphicon glyphicon-chevron-left"></span></a>
+                            <a class="right carousel-control" href="#projectKsel" role="button" data-slide="next"> <span
+                                    class="glyphicon glyphicon-chevron-right"></span></a>
+                        </div>
+                        <div id="carouselHeader">
+                            <h4>Вилла 5+2 170m2 скидка 10%</h4>
+                        </div>
+                        <div id="info">
+                            <p> Новостройка люкс класса Стамбул Бейликдюзю, состоит из 8 башен, в
+                                каждой 41 этаж. На площади 40 тыс.м2, 50% территории озеленение. Имеется
+                                торговый центр на 102 павильона, детский парк, баскетбольная площадка, зона
+                                барбекю, 2 бессейна, 2 спортзала, 2 сауны, 2 турецкие бани, 2 массажных
+                                центра, подземная и открытая парковки. Рядом вся необходимая социальная
+                                инфраструктура. Получение ВНЖ и
+                                гражданства Турции без проблем.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn-sm close" type="button" data-dismiss="modal">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project L  -->
+        <div class="modal fade" id="projectL">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header"> <span class="wave-1">☎ </span><b> +90 5551234567 <span> +90
+                                5551234890</span></b>
+                        <button type="button" class="close" data-dismiss="modal" title="Close"> <span
+                                class="glyphicon glyphicon-remove"></span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="projectLsel" class="carousel slide project-slide" data-interval="false">
+                            <div class="carousel-inner">
+                                <div class="item active"> <img src="image/project/photos_12.webp" alt="item1">
+                                </div>
+                                <div class="item"><img src="image/home/home_2.webp" alt="item2">
+                                </div>
+                                <div class="item"> <img src="image/home/home_4.webp" alt="item3">
+                                </div>
+                                <div class="item"> <img src="image/home/home_6.webp" alt="item4">
+                                </div>
+                                <div class="item"> <img src="image/home/home_8.webp" alt="item5">
+                                </div>
+                                <div class="item"> <img src="image/home/home_11.webp" alt="item6">
+                                </div>
+                                <div class="item"> <video src="video/present_4.mp4" alt="item7" autoplay loop muted
+                                        playsinline></video>
+                                </div>
+                                <ol class="carousel-indicators">
+                                    <li class="active" data-slide-to="0" data-target="#projectLsel">
+                                        <img alt="" src="image/home/home_2.webp">
+                                    </li>
+                                    <li class="" data-slide-to="1" data-target="#projectLsel">
+                                        <img alt="" src="image/home/home_4.webp">
+                                    </li>
+                                    <li class="" data-slide-to="2" data-target="#projectLsel">
+                                        <img alt="" src="image/home/home_6.webp">
+                                    </li>
+                                    <li class="" data-slide-to="3" data-target="#projectLsel">
+                                        <img alt="" src="image/home/home_8.webp">
+                                    </li>
+                                    <li class="" data-slide-to="4" data-target="#projectLsel">
+                                        <img alt="" src="image/home/home_11.webp">
+                                    </li>
+                                    <li class="" data-slide-to="5" data-target="#projectLsel">
+                                        <video src="video/present_4.mp4" autoplay loop muted playsinline></video>
+                                    </li>
+                                </ol>
+                            </div>
+                            <a class="left carousel-control" href="#projectLsel" role="button" data-slide="prev"> <span
+                                    class="glyphicon glyphicon-chevron-left"></span></a>
+                            <a class="right carousel-control" href="#projectLsel" role="button" data-slide="next"> <span
+                                    class="glyphicon glyphicon-chevron-right"></span></a>
+                        </div>
+                        <div id="carouselHeader">
+                            <h4>Вилла 4+2 150m2</h4>
+                        </div>
+                        <div id="info">
+                            <p> Новостройка люкс класса Стамбул Бейликдюзю, состоит из 8 башен, в
+                                каждой 41 этаж. На площади 40 тыс.м2, 50% территории озеленение. Имеется
+                                торговый центр на 102 павильона, детский парк, баскетбольная площадка, зона
+                                барбекю, 2 бессейна, 2 спортзала, 2 сауны, 2 турецкие бани, 2 массажных
+                                центра, подземная и открытая парковки. Рядом вся необходимая социальная
+                                инфраструктура. Получение ВНЖ и
+                                гражданства Турции без проблем.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn-sm close" type="button" data-dismiss="modal">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- третий ряд конец -->
+
+    </div>
+
+    <!-- modal experiment-->
 
     <!-- deal section starts  -->
 
@@ -429,7 +1355,7 @@
 
             <div class="swiper-wrapper">
 
-                <div class="swiper-slide slide">
+                <div class="swiper-slide slide" data-toggle="modal" data-target="#projectW">
                     <div class="image">
                         <img src="image/project/photos_12.webp" alt="">
                     </div>
@@ -450,7 +1376,7 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide slide">
+                <div class="swiper-slide slide" data-toggle="modal" data-target="#projectW">
                     <div class="image">
                         <img src="image/project/photos_11.webp" alt="">
                     </div>
@@ -471,7 +1397,7 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide slide">
+                <div class="swiper-slide slide" data-toggle="modal" data-target="#projectW">
                     <div class="image">
                         <img src="image/project/photos_9.webp" alt="">
                     </div>
@@ -492,7 +1418,7 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide slide">
+                <div class="swiper-slide slide" data-toggle="modal" data-target="#projectW">
                     <div class="image">
                         <img src="image/project/photos_8.webp" alt="">
                     </div>
@@ -513,7 +1439,7 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide slide">
+                <div class="swiper-slide slide" data-toggle="modal" data-target="#projectW">
                     <div class="image">
                         <img src="image/project/photos_7.webp" alt="">
                     </div>
@@ -534,7 +1460,7 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide slide">
+                <div class="swiper-slide slide" data-toggle="modal" data-target="#projectW">
                     <div class="image">
                         <img src="image/project/photos_6.webp" alt="">
                     </div>
@@ -564,6 +1490,80 @@
     </section>
 
     <!-- featured section ends -->
+
+    <!-- модалка на стадии строительсва -->
+    <div id="projects" class="container-fluid" visibility="hidden">
+        <div class="modal fade" id="projectW">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header"> <span class="wave-1">☎ </span><b> +90 5551234567 <span> +90
+                                5551234890</span></b>
+                        <button type="button" class="close" data-dismiss="modal" title="Close"> <span
+                                class="glyphicon glyphicon-remove"></span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="projectWsel" class="carousel slide project-slide" data-interval="false">
+                            <div class="carousel-inner">
+                                <div class="item active"> <img src="image/home/home_1.webp" alt="item1">
+                                </div>
+                                <div class="item"><img src="image/home/home_3.webp" alt="item2">
+                                </div>
+                                <div class="item"> <img src="image/home/home_5.webp" alt="item3">
+                                </div>
+                                <div class="item"> <img src="image/home/home_7.webp" alt="item4">
+                                </div>
+                                <div class="item"> <img src="image/home/home_9.webp" alt="item5">
+                                </div>
+                                <div class="item"> <img src="image/home/home_11.webp" alt="item6">
+                                </div>
+                                <div class="item"> <video src="video/present_2.mp4" alt="item7" autoplay loop muted
+                                        playsinline></video>
+                                </div>
+                                <ol class="carousel-indicators">
+                                    <li class="active" data-slide-to="0" data-target="#projectWsel">
+                                        <img alt="" src="image/home/home_3.webp">
+                                    </li>
+                                    <li class="" data-slide-to="1" data-target="#projectWsel">
+                                        <img alt="" src="image/home/home_5.webp">
+                                    </li>
+                                    <li class="" data-slide-to="2" data-target="#projectWsel">
+                                        <img alt="" src="image/home/home_7.webp">
+                                    </li>
+                                    <li class="" data-slide-to="3" data-target="#projectWsel">
+                                        <img alt="" src="image/home/home_9.webp">
+                                    </li>
+                                    <li class="" data-slide-to="4" data-target="#projectWsel">
+                                        <img alt="" src="image/home/home_11.webp">
+                                    </li>
+                                    <li class="" data-slide-to="5" data-target="#projectWsel">
+                                        <video src="video/present_2.mp4" autoplay loop muted playsinline></video>
+                                    </li>
+                                </ol>
+                            </div>
+                            <a class="left carousel-control" href="#projectWsel" role="button" data-slide="prev"> <span
+                                    class="glyphicon glyphicon-chevron-left"></span></a>
+                            <a class="right carousel-control" href="#projectWsel" role="button" data-slide="next"> <span
+                                    class="glyphicon glyphicon-chevron-right"></span></a>
+                        </div>
+                        <div id="carouselHeader">
+                            <h4>Объекты на стадии строительсва</h4>
+                        </div>
+                        <div id="info">
+                            <p> Продажа объектов недвижимости на этапе строительства от крупнейщих застройщиков Турции.
+                                По выгодным ценам. Гарантия отсутствия рисков повышения цены на стадии завершения, ведь
+                                подписан договор с застройщиком, где зафиксирована первоначальная стоимость объекта.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn-sm close" type="button" data-dismiss="modal">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- модалка на стадии строительсва конец -->
 
     <!-- reviews section starts  -->
 
@@ -657,18 +1657,17 @@
 
             <div class="icons">
 
-                <a href="tel:+905013308850">
-                    <!-- <div class="pulse"> <i class="fas fa-phone"></i></div> -->
+                <a href="tel:+905557773333">
                     <span class="wave"><i class="fas fa-phone"></i></span>
                 </a>
                 <h3>Телефон</h3>
-                <a href="tel:+905013308850">
-                    <p>☎ +90 5013308850</p>
+                <a href="tel:+905557773333">
+                    <p>☎ +90 5557773333</p>
                 </a>
                 <div style="width: 100%; display: flex; align-items: center; justify-content: center">
-                    <div class="fa fa-whatsapp" style="font-size: 16px; margin-right: 5px;"></div>
-                    <a href="https://api.whatsapp.com/send?phone=905013308850">
-                        <p> +90 5013308850</p>
+                    <div class="fa fa-whatsapp" style="font-size: 16px; margin-right: 5px; margin-bottom: 12px"></div>
+                    <a href="https://api.whatsapp.com/send?phone=905557773333">
+                        <p> +90 5557773333</p>
                     </a>
                 </div>
             </div>
@@ -676,17 +1675,17 @@
                 <i class="fas fa-envelope"></i>
                 <h3>Электронная почта</h3>
                 <a href="mailto:talgat@gmail.com?subject=Вопрос по недвижимости">
-                    <p>talgat@gmail.com</p>
+                    <p>istanbul@gmail.com</p>
                 </a>
                 <a href="mailto:kavakli-estate@gmail.com?subject=Вопрос по недвижимости">
-                    <p>kavakli-estate@gmail.com</p>
+                    <p>pinartepe@gmail.com</p>
                 </a>
             </div>
             <div class="icons">
                 <i class="fas fa-map-marker-alt"></i>
                 <h3>Адрес офиса</h3>
-                <p>Kavakli, Kanarya Cd. no 5,</p>
-                <p> 34520 Beylikdüzü İstanbul</p>
+                <p>Pinartepe, Oguzhan Sokagi No:3,</p>
+                <p>34520 Büyükçekmece İstanbul</p>
             </div>
         </div>
 
@@ -696,7 +1695,8 @@
 
         <div class="share">
 
-            <a href="#" class="fab fa-telegram"></a>
+            <a href="https://api.whatsapp.com/send?phone=905557773333" class="fa fa-whatsapp"></a>
+            <a href="https://t.me/istanbul_exp" class="fab fa-telegram"></a>
             <a href="#" class="fab fa-facebook-f"></a>
             <a href="#" class="fab fa-twitter"></a>
             <a href="https://www.youtube.com/channel/UCR58sPLCgfgkZ0BDs9TKeCQ" class="fab fa-instagram"></a>
@@ -712,7 +1712,11 @@
     <script src="https://kit.fontawesome.com/df55f41293.js" crossorigin="anonymous"></script>
 
     <!-- custom js file link -->
-    <script src="js/script.js"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/gh/AmagiTech/JSLoader/amagiloader.js"></script> -->
+
+
+    <script src="script.js"></script>
 
 </body>
 
