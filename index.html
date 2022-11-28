@@ -7,37 +7,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Купить квартиру в Турции легко. Мы подберем для вас лучшие предложения непостредственно от застойщиков, поможем с оформлением недвижимости и получением гражданства. Звоните по номеру +90 552 286 8989, +90 552 592 9191" />
+        content="Купить квартиру в Турции легко. Мы подберем для вас лучшие предложения непостредственно от застойщиков, поможем с оформлением недвижимости и получением гражданства. Звоните по номеру +90 552 123 4567, +90 552 555 7777" />
     <meta name="keywords" content="продажа квартир недвижимости в Стамбуле, Бейликдюзю цены отзывы контакты адрес">
 
     <title>Продажа квартир в Турции</title>
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="56x56" href="image/logo-21.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="style.css">
-    <!-- "Нет мощи и силы ни у кого, кроме Аллаха". لا حَـوْلَ وَلا قُـوَّةَ إِلاّ بِالله. Ля хауля ва ля куввата илля би-Лляхи!!! -->
 
-    <!-- modal -->
-    <!--Bootstrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
-    <!--Latest stable release of jQuery Core Library-->
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="56x56" href="image/logo-21.png">
+
     <script src="https://code.jquery.com/jquery-1.12.2.min.js"
         integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!--Latest stable release of jQuery Core Library-->
 
     <!--Bootstrap JS-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
     </script>
 
-
 </head>
 
 <body>
+
+    <script>
+        /* loader */
+        const AmagiLoader = {
+            __loader: null,
+            show: function () {
+
+                if (this.__loader == null) {
+                    var divContainer = document.createElement('div');
+                    divContainer.style.position = 'fixed';
+                    divContainer.style.left = '0';
+                    divContainer.style.top = '0';
+                    divContainer.style.width = '100%';
+                    divContainer.style.height = '100%';
+                    divContainer.style.zIndex = '9998';
+                    divContainer.style.backgroundColor = 'rgba(250, 250, 250, 0.80)';
+
+                    var div = document.createElement('div');
+                    div.style.position = 'absolute';
+                    div.style.left = '50%';
+                    div.style.top = '50%';
+                    div.style.zIndex = '9999';
+                    div.style.height = '64px';
+                    div.style.width = '64px';
+                    div.style.margin = '-76px 0 0 -76px';
+                    div.style.border = '8px solid #e1e1e1';
+                    div.style.borderRadius = '50%';
+                    div.style.borderTop = '8px solid #eb4d4b';
+                    div.animate([
+                        { transform: 'rotate(0deg)' },
+                        { transform: 'rotate(360deg)' }
+                    ], {
+                        duration: 3000,
+                        iterations: Infinity
+                    });
+                    divContainer.appendChild(div);
+                    this.__loader = divContainer
+                    document.body.appendChild(this.__loader);
+                }
+                this.__loader.style.display = "";
+            },
+            hide: function () {
+                if (this.__loader != null) {
+                    this.__loader.style.display = "none";
+                }
+            }
+        }
+
+        AmagiLoader.show();
+        setTimeout(() => {
+            AmagiLoader.hide();
+        }, 3000);
+/* loader */
+
+    </script>
+
 
     <!-- header section starts  -->
 
@@ -1712,6 +1768,7 @@
     <script src="https://kit.fontawesome.com/df55f41293.js" crossorigin="anonymous"></script>
 
     <!-- custom js file link -->
+
 
     <!-- <script src="https://cdn.jsdelivr.net/gh/AmagiTech/JSLoader/amagiloader.js"></script> -->
 
