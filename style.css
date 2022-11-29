@@ -599,6 +599,16 @@ a {
   text-align: center;
 }
 
+.modal-header a:hover {
+  text-decoration: none;
+}
+
+.modal-header b {
+  margin-left: 10px;
+  font-size: 18px;
+  color: #222222b6;
+}
+
 .modal-header .close {
   color: #eb4d4b;
   opacity: 0.5;
@@ -619,11 +629,11 @@ a {
 }
 
 .carousel-inner .item img {
-  max-height: 450px;
+  max-height: 400px;
 }
 
 .carousel-inner .item video {
-  max-height: 450px;
+  max-height: 400px;
 }
 
 /* Indicators list style */
