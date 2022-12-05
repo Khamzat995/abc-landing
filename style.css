@@ -262,7 +262,7 @@ section {
 }
 
 /* анимация текста */
-.slideLeft {
+/* .slideLeft {
   animation-name: slideLeft;
   -webkit-animation-name: slideLeft;
 
@@ -283,19 +283,21 @@ section {
   100% {
     transform: translateX(0%);
   }
-}
+} */
 
 .slideLeft-1 {
   animation-name: slideLeft-1;
   -webkit-animation-name: slideLeft-1;
 
-  animation-duration: 2.3s;
-  -webkit-animation-duration: 2.3s;
+  animation-duration: 1.3s;
+  -webkit-animation-duration: 1.3s;
 
   animation-timing-function: ease-in-out;
   -webkit-animation-timing-function: ease-in-out;
 
   visibility: visible !important;
+  animation-delay: 3s;
+  /* Задержка */
 }
 
 @keyframes slideLeft-1 {
@@ -312,13 +314,15 @@ section {
   animation-name: slideLeft-2;
   -webkit-animation-name: slideLeft-2;
 
-  animation-duration: 2.6s;
-  -webkit-animation-duration: 2.6s;
+  animation-duration: 1.6s;
+  -webkit-animation-duration: 1.6s;
 
   animation-timing-function: ease-in-out;
   -webkit-animation-timing-function: ease-in-out;
 
   visibility: visible !important;
+  animation-delay: 3.3s;
+  /* Задержка */
 }
 
 @keyframes slideLeft-2 {
@@ -335,13 +339,15 @@ section {
   animation-name: slideLeft-3;
   -webkit-animation-name: slideLeft-3;
 
-  animation-duration: 2.9s;
-  -webkit-animation-duration: 2.9s;
+  animation-duration: 1.9s;
+  -webkit-animation-duration: 1.9s;
 
   animation-timing-function: ease-in-out;
   -webkit-animation-timing-function: ease-in-out;
 
   visibility: visible !important;
+  animation-delay: 3.9s;
+  /* Задержка */
 }
 
 @keyframes slideLeft-3 {
@@ -358,13 +364,15 @@ section {
   animation-name: slideLeft-4;
   -webkit-animation-name: slideLeft-4;
 
-  animation-duration: 3.2s;
-  -webkit-animation-duration: 3.2s;
+  animation-duration: 2.2s;
+  -webkit-animation-duration: 2.2s;
 
   animation-timing-function: ease-in-out;
   -webkit-animation-timing-function: ease-in-out;
 
   visibility: visible !important;
+  animation-delay: 4.2s;
+  /* Задержка */
 }
 
 @keyframes slideLeft-4 {
@@ -381,13 +389,15 @@ section {
   animation-name: slideLeft-5;
   -webkit-animation-name: slideLeft-5;
 
-  animation-duration: 3.5s;
-  -webkit-animation-duration: 3.5s;
+  animation-duration: 2.5s;
+  -webkit-animation-duration: 2.5s;
 
   animation-timing-function: ease-in-out;
   -webkit-animation-timing-function: ease-in-out;
 
   visibility: visible !important;
+  animation-delay: 4.5s;
+  /* Задержка */
 }
 
 @keyframes slideLeft-5 {
@@ -799,7 +809,7 @@ a {
 
 /* carousel-control */
 .carousel-control {
-  color: #b8770d;
+  color: #eb4d4b;
   opacity: 0.5;
 }
 
