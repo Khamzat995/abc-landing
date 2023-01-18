@@ -79,7 +79,31 @@ html::-webkit-scrollbar-thumb {
 } */
 
 
+/* new loader */
+.containerLoader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9998;
+  background-color: rgba(250, 250, 250, 0.80);
+}
 
+.loaderReder {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 9999;
+  height: 64px;
+  width: 64px;
+  margin: -76px 0 0 -76px;
+  border: 8px solid #e1e1e1;
+  border-radius: 50px;
+  border-top: 8px solid #eb4d4b;
+}
+
+/* new loader */
 
 
 section {
@@ -262,9 +286,9 @@ section {
 }
 
 /* анимация текста */
-/* .slideLeft {
-  animation-name: slideLeft;
-  -webkit-animation-name: slideLeft;
+/* .slide-left {
+  animation-name: slide-left;
+  -webkit-animation-name: slide-left;
 
   animation-duration: 2s;
   -webkit-animation-duration: 2s;
@@ -275,7 +299,7 @@ section {
   visibility: visible !important;
 }
 
-@keyframes slideLeft {
+@keyframes slide-left {
   0% {
     transform: translateX(150%);
   }
@@ -285,22 +309,22 @@ section {
   }
 } */
 
-.slideLeft-1 {
-  animation-name: slideLeft-1;
-  -webkit-animation-name: slideLeft-1;
+.slide-left-1 {
+  animation-name: slide-left-1;
+  -webkit-animation-name: slide-left-1;
 
-  animation-duration: 1.3s;
-  -webkit-animation-duration: 1.3s;
+  animation-duration: 2.3s;
+  -webkit-animation-duration: 2.3s;
 
   animation-timing-function: ease-in-out;
   -webkit-animation-timing-function: ease-in-out;
 
   visibility: visible !important;
-  animation-delay: 3s;
+  animation-delay: 2s;
   /* Задержка */
 }
 
-@keyframes slideLeft-1 {
+@keyframes slide-left-1 {
   0% {
     transform: translateX(150%);
   }
@@ -310,22 +334,22 @@ section {
   }
 }
 
-.slideLeft-2 {
-  animation-name: slideLeft-2;
-  -webkit-animation-name: slideLeft-2;
+.slide-left-2 {
+  animation-name: slide-left-2;
+  -webkit-animation-name: slide-left-2;
 
-  animation-duration: 1.6s;
-  -webkit-animation-duration: 1.6s;
+  animation-duration: 2.6s;
+  -webkit-animation-duration: 2.6s;
 
   animation-timing-function: ease-in-out;
   -webkit-animation-timing-function: ease-in-out;
 
   visibility: visible !important;
-  animation-delay: 3.3s;
+  animation-delay: 2.3s;
   /* Задержка */
 }
 
-@keyframes slideLeft-2 {
+@keyframes slide-left-2 {
   0% {
     transform: translateX(150%);
   }
@@ -335,22 +359,22 @@ section {
   }
 }
 
-.slideLeft-3 {
-  animation-name: slideLeft-3;
-  -webkit-animation-name: slideLeft-3;
+.slide-left-3 {
+  animation-name: slide-left-3;
+  -webkit-animation-name: slide-left-3;
 
-  animation-duration: 1.9s;
-  -webkit-animation-duration: 1.9s;
+  animation-duration: 2.9s;
+  -webkit-animation-duration: 2.9s;
 
   animation-timing-function: ease-in-out;
   -webkit-animation-timing-function: ease-in-out;
 
   visibility: visible !important;
-  animation-delay: 3.9s;
+  animation-delay: 2.9s;
   /* Задержка */
 }
 
-@keyframes slideLeft-3 {
+@keyframes slide-left-3 {
   0% {
     transform: translateX(150%);
   }
@@ -360,22 +384,22 @@ section {
   }
 }
 
-.slideLeft-4 {
-  animation-name: slideLeft-4;
-  -webkit-animation-name: slideLeft-4;
+.slide-left-4 {
+  animation-name: slide-left-4;
+  -webkit-animation-name: slide-left-4;
 
-  animation-duration: 2.2s;
-  -webkit-animation-duration: 2.2s;
+  animation-duration: 3.2s;
+  -webkit-animation-duration: 3.2s;
 
   animation-timing-function: ease-in-out;
   -webkit-animation-timing-function: ease-in-out;
 
   visibility: visible !important;
-  animation-delay: 4.2s;
+  animation-delay: 3.2s;
   /* Задержка */
 }
 
-@keyframes slideLeft-4 {
+@keyframes slide-left-4 {
   0% {
     transform: translateX(150%);
   }
@@ -385,22 +409,22 @@ section {
   }
 }
 
-.slideLeft-5 {
-  animation-name: slideLeft-5;
-  -webkit-animation-name: slideLeft-5;
+.slide-left-5 {
+  animation-name: slide-left-5;
+  -webkit-animation-name: slide-left-5;
 
-  animation-duration: 2.5s;
-  -webkit-animation-duration: 2.5s;
+  animation-duration: 3.5s;
+  -webkit-animation-duration: 3.5s;
 
   animation-timing-function: ease-in-out;
   -webkit-animation-timing-function: ease-in-out;
 
   visibility: visible !important;
-  animation-delay: 4.5s;
+  animation-delay: 3.5s;
   /* Задержка */
 }
 
-@keyframes slideLeft-5 {
+@keyframes slide-left-5 {
   0% {
     transform: translateX(150%);
   }
@@ -468,14 +492,14 @@ section {
 .banner-container .banner .content span {
   font-size: 2rem;
   color: #fdd700;
-  text-shadow: 1px 1px 2px black;
+  text-shadow: 1px 1px 1px black;
 }
 
 .banner-container .banner .content h3 {
   font-size: 3.2rem;
   color: #d84a48;
   padding-top: .5rem;
-  text-shadow: 1px 1px 2px black;
+  text-shadow: 1px 1px 1px black;
 }
 
 @-webkit-keyframes fadeUp {
@@ -889,6 +913,33 @@ a {
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   text-align: center;
+
+
+}
+
+.contact .icons-container #icons-1 {
+  background-image: url("image/contact_icon_fon_11.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+
+}
+
+.contact .icons-container #icons-2 {
+  background-image: url("image/contact_icon_fon_21.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+.contact .icons-container #icons-3 {
+  background-image: url("image/contact_icon_fon_31.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
 }
 
 /* анимация */
@@ -973,7 +1024,8 @@ a {
 .contact .icons-container .icons p {
   font-size: 1.5rem;
   line-height: 2;
-  color: #666;
+  font-weight: bold;
+  color: rgb(50, 50, 50);
 }
 
 .contact .row {
@@ -1069,6 +1121,10 @@ a {
 
 
 @media (max-width: 1024px) {
+  .loaderReder {
+    left: 55%;
+  }
+
   .navbar {
     width: 100%;
   }
@@ -1128,6 +1184,10 @@ a {
     font-size: 55%;
   }
 
+  .loaderReder {
+    left: 55%;
+  }
+
   .header {
     padding: 2rem;
   }
@@ -1156,6 +1216,10 @@ a {
 }
 
 @media (max-width: 768px) {
+  .loaderReder {
+    left: 60%;
+  }
+
   #menu-btn {
     display: inline-block;
   }
@@ -1232,6 +1296,10 @@ a {
     font-size: 50%;
   }
 
+  .loaderReder {
+    left: 65%;
+  }
+
   .heading {
     font-size: 3rem;
   }
@@ -1291,6 +1359,10 @@ a {
 
 
 @media (max-width: 360px) {
+
+  .loaderReder {
+    left: 65%;
+  }
 
   .header img {
     min-width: 80px;
