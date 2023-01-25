@@ -531,6 +531,12 @@ section {
   gap: 2rem;
 }
 
+#button-popular {
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
 .products .filter-buttons .buttons {
   font-size: 1.7rem;
   color: #666;
